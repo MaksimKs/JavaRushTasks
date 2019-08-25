@@ -31,27 +31,3 @@ public class Solution {
         System.out.println(stringBuilder.toString().trim());
     }
 }
-/*
-* public static String capitalize(String str, char[] delimiters) {
-276            int delimLen = (delimiters == null ? -1 : delimiters.length);
-277            if (str == null || str.length() == 0 || delimLen == 0) {
-278                return str;
-279            }
-280            int strLen = str.length();
-281            StringBuffer buffer = new StringBuffer(strLen);
-282            boolean capitalizeNext = true;
-283            for (int i = 0; i < strLen; i++) {
-284                char ch = str.charAt(i);
-285
-286                if (isDelimiter(ch, delimiters)) {
-287                    buffer.append(ch);
-288                    capitalizeNext = true;
-289                } else if (capitalizeNext) {
-290                    buffer.append(Character.toTitleCase(ch));
-291                    capitalizeNext = false;
-292                } else {
-293                    buffer.append(ch);
-294                }
-295            }
-296            return buffer.toString();
-297        }*/
