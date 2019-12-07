@@ -46,11 +46,11 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        //Map<String,String> map1 = new HashMap<>(createMap());
-        //removeTheFirstNameDuplicates(map1);
+        Map<String,String> map1 = new HashMap<>(createMap());
+        removeTheFirstNameDuplicates(map1);
         /*for(Map.Entry<String,String> entry : map1.entrySet()){
             System.out.println(entry.getKey() + " " + entry.getValue());
         }*/
-        //map1.forEach((k,v) -> System.out.println(k + " " + v));
+        map1.forEach((k,v) -> System.out.println(k + " " + v));
     }
 }

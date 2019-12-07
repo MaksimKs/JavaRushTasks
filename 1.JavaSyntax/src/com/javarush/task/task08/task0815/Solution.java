@@ -27,7 +27,7 @@ public class Solution {
     public static int getCountTheSameFirstName(Map<String, String> map, String name) {
         int firstNameCounter = 0;
         for (Map.Entry<String, String> pairFirstN : map.entrySet()) {
-            if (pairFirstN.getValue().equalsIgnoreCase(name)) {
+            if (pairFirstN.getKey().equalsIgnoreCase(name)) {
                 firstNameCounter++;
             }
         }
@@ -37,7 +37,7 @@ public class Solution {
     public static int getCountTheSameLastName(Map<String, String> map, String lastName) {
         int secondNameCounter = 0;
         for(Map.Entry<String,String> pairSecondN : map.entrySet()) {
-            if (pairSecondN.getKey().equalsIgnoreCase(lastName)) {
+            if (pairSecondN.getValue().equalsIgnoreCase(lastName)) {
                 secondNameCounter++;
             }
         }

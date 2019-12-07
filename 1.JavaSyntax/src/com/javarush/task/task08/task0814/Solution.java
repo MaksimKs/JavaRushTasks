@@ -17,7 +17,7 @@ public class Solution {
 
     public static Set<Integer> removeAllNumbersGreaterThan10(Set<Integer> set) {
         //Set<Integer> copySet = new HashSet<>(set);
-        for (Iterator<Integer> iterator = set.iterator(); iterator.hasNext(); iterator.hasNext()) {
+        for (Iterator<Integer> iterator = set.iterator(); iterator.hasNext(); ) {
             if (iterator.next() > 10) {
                 iterator.remove();
             }

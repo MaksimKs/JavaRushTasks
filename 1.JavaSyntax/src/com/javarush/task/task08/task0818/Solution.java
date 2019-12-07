@@ -25,13 +25,13 @@ public class Solution {
     }
 
     public static void removeItemFromMap(Map<String, Integer> map) {
-        for(Iterator<Map.Entry<String,Integer>> iterator = map.entrySet().iterator(); iterator.hasNext();) {
+        map.entrySet().removeIf(value -> value.getValue() < 500);
+        /*for(Iterator<Map.Entry<String,Integer>> iterator = map.entrySet().iterator(); iterator.hasNext();) {
             Map.Entry<String,Integer> pair = iterator.next();
             if (pair.getValue() < 500) {
                 iterator.remove();
-            }
+            }*/
         }
-    }
 
     public static void main(String[] args) {
 /*        Map<String,Integer> pair1 = new HashMap<>(createMap());

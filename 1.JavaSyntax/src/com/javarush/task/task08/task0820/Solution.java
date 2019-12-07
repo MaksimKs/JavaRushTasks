@@ -21,11 +21,11 @@ public class Solution {
     }
 
     public static Set<Cat> createCats() {
-        Set<Cat> result = new HashSet<Cat>();
+        Set<Cat> catResult = new HashSet<Cat>();
         for (int counterCat = 0; counterCat < 4; counterCat++) {
-            result.add(new Cat());
+            catResult.add(new Cat());
         }
-        return result;
+        return catResult;
     }
 
     public static Set<Dog> createDogs() {
