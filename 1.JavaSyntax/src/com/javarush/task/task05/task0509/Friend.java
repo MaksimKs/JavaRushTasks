@@ -4,7 +4,6 @@ package com.javarush.task.task05.task0509;
 Создать класс Friend
 */
 
-import com.sun.javafx.robot.impl.FXRobotHelper;
 
 public class Friend {
     private String name;
