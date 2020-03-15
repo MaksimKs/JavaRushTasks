@@ -49,17 +49,18 @@ public class Solution {
         @Override
         public void run() {
             try {
-                for (int i = 0; i != OnlineGame.steps.size(); i++) {
-                    Thread.sleep(1000 / rating);
-                    System.out.println(Thread.currentThread().getName() + ":" + OnlineGame.steps.get(i));
-                    if (i == OnlineGame.steps.size() - 1) {
+                for (int i = 0; i < OnlineGame.steps.size(); i++) {
+                    Thread.sleep(1000 / this.rating);
+                    System.out.println(getName() + ":" + OnlineGame.steps.get(i));
+                    if (i == OnlineGame.steps.size() - 1 && !OnlineGame.isWinnerFound) {
                         OnlineGame.isWinnerFound = true;
-                        System.out.println(Thread.currentThread().getName() + ":" + "победитель" );
+                        System.out.println(getName() + ":победитель!");
                     }
                 }
-            } catch (InterruptedException e) {
-                    System.out.println(Thread.currentThread().getName() + ":" + "проиграл");
-                }
+            }
+            catch (InterruptedException e) {
+                System.out.println(Thread.currentThread().getName() + ":проиграл");
             }
         }
     }
+}
